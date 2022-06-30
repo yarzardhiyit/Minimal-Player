@@ -41,7 +41,7 @@ namespace Minimal_Player
             if(fbdGetlist.ShowDialog() == DialogResult.OK)
             {
                 string path = fbdGetlist.SelectedPath.ToString();
-                var fnames = Directory.GetFiles(path);
+                var fnames = Directory.GetFiles(path); //using system.IO
                 foreach(string fname in fnames)
                 {
                     lsPlay.Items.Add(fname);
